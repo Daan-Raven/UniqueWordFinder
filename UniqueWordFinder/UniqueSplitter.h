@@ -13,14 +13,18 @@ using namespace std;
 #define cdbg 0 && wcout
 #endif
 
+// Функция чтения из консоли
+wstring ReadWordsString();
+
 class UniqueSplitter
 {
 public:
+	// Конструктор, задающий строку для разбора
 	UniqueSplitter(const wstring& str);
-
+	// Метод получения уникальных слов из строки
 	vector<wstring> GetUniqueWords() const;
 private:
-	wstring mString;
+	wstring mString; // строка
 };
 
-#endif // !UNIQUE_SPLITTER_HEADER_PROTECTION
+#endif // UNIQUE_SPLITTER_HEADER_PROTECTION
