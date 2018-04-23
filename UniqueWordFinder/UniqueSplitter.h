@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <string_view>
 #include <vector>
 
 using namespace std;
@@ -22,7 +23,7 @@ public:
 	//  онструктор, задающий строку дл€ разбора
 	UniqueSplitter(const wstring& str);
 	// ћетод получени€ уникальных слов из строки
-	vector<wstring> GetUniqueWords() const;
+	vector<wstring_view> GetUniqueWords() const;
 private:
 	wstring mString; // строка
 };
